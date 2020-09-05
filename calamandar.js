@@ -103,12 +103,13 @@ const Calamandar = (function () {
 
 // fetch calamandar data and call createSchedule to generate the calandar!
 
-const req = new XMLHttpRequest();
-req.onreadystatechange = function () {
-  if (this.readyState == 4 && this.status == 200) {
-    const res = JSON.parse(req.response);
-    Calamandar(res);
-  }
-};
-req.open("GET", "/calamandar_data.json");
-req.send();
+// uncomment for demo
+// const req = new XMLHttpRequest();
+// req.onreadystatechange = function () {
+//   if (this.readyState == 4 && this.status == 200) {
+//     const res = JSON.parse(req.response);
+//     Calamandar(res);
+//   }
+// };
+// req.open("GET", "/calamandar_data.json");
+// req.send();
