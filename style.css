@@ -1,0 +1,102 @@
+.cal-container {
+  font-size: 12px;
+  max-height: 70vh;
+  overflow: auto;
+}
+
+.cal-day {
+  display: flex;
+  line-height: 1em;
+}
+
+.cal-title {
+  position: sticky;
+  top: 0;
+  margin-bottom: 0;
+}
+
+.cal-column,
+.cal-event,
+.cal-time {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+.cal-column {
+  flex: 2;
+}
+
+.cal-column.cal-time-column {
+  flex: 1;
+}
+
+.cal-event,
+.cal-time {
+  height: 2em;
+  padding: 0.5em;
+  overflow: hidden;
+}
+
+.cal-container {
+  background-color: white;
+  padding: 0 2em 2em 2em;
+  border-radius: 1em;
+  -webkit-box-shadow: 0px 11px 21px -2px rgba(143, 143, 143, 1);
+  -moz-box-shadow: 0px 11px 21px -2px rgba(143, 143, 143, 1);
+  box-shadow: 0px 11px 21px -2px rgba(143, 143, 143, 1);
+}
+
+.cal-day {
+  position: relative;
+}
+
+.cal-title {
+  background-color: white;
+  font-weight: lighter;
+  padding-top: 1em;
+  text-align: center;
+  z-index: 2;
+}
+
+.cal-time-column > .cal-title {
+  color: white;
+}
+
+.cal-time {
+  text-align: center;
+  font-weight: lighter;
+}
+
+.cal-time:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  left: 0;
+  border-bottom: 1px dotted lightgrey;
+  margin-top: 1.45em;
+}
+
+.cal-event {
+  border-radius: 5px;
+  background-color: rgb(236, 236, 236);
+  margin: 0 0.2em;
+  position: relative;
+  z-index: 1;
+}
+
+.cal-event-title {
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.cal-event.blue {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    346deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(111, 111, 255, 1) 0%,
+    rgba(201, 246, 255, 1) 100%
+  );
+  color: white;
+}
