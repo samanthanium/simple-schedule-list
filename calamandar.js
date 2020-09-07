@@ -111,5 +111,5 @@ req.onreadystatechange = function () {
     Calamandar(res);
   }
 };
-req.open("GET", "simple-schedule-list/calamandar_data.json");
+req.open("GET", "calamandar_data.json");
 req.send();
